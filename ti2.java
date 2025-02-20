@@ -8,12 +8,12 @@
  *						 *
  * **********************************************/
 
-import java.util.*;
+import java.util.Scanner;
 
-public class ti2{
+public class Main{
 
 	// metodo para somar numeros
-	public static int somarNumeros(int n){
+	public static int somarNumeros(int n, Scanner teclado){
 	
 		// declara acumulador e variavel para o laco de repeticao
 		int soma = 0;
@@ -22,7 +22,7 @@ public class ti2{
 		// somatorio que faz leitura e atribue ao acumulador
 		for(int i = 0; i < n; i++){
 		
-			System.out.println("Digite o " + i + " termo");
+			System.out.print("Digite o termo " + i + ": ");
 			num = teclado.nextInt();
 			soma += num;
 
@@ -35,8 +35,8 @@ public class ti2{
 	
 		Scanner teclado = new Scanner(System.in);
 
-		// assina a funcao com a chave da atividade
-		System.out.println(somarNumeros(2));
+		// assina a funcao com a chave da atividade, parametriza o objeto da classe
+		System.out.println("\nResultado: " + somarNumeros(2, teclado));
 
 		teclado.close();
 	}
