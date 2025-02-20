@@ -10,7 +10,7 @@
 
 import java.util.Scanner;
 
-public class Main{
+public class somaIterativo{
 
 	// metodo para somar numeros
 	public static int somarNumeros(int n, Scanner teclado){
